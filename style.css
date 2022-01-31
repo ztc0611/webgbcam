@@ -80,6 +80,11 @@ body {
 	display: none;
 }
 
+#output{
+	width:160px;
+	overflow: none;
+}
+
 .button {
 	width: 200px;
 	background-color: black;

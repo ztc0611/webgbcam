@@ -340,7 +340,7 @@ function savePicture() {
 	ctx.drawImage(cameraView, 0,0, cameraOutput.width, cameraOutput.height);
 	Filters.filterImage(Filters.paletteSwap, cameraOutput, [palettes[currentPalette]])
 	var dataURL = cameraOutput.toDataURL('image/png');
-	document.getElementById("output").src = dataURL;
+	download("webgbcam " + getFileDate() + ".png", dataURL);
 }
 
 // bounding boxes for each button in the app
@@ -588,6 +588,12 @@ window.onresize = restartCamera;
 function captureImage() {
 	cameraStream.pause();
 	currentUI = uiCapture;
+	
+	let ctx = cameraOutput.getContext("2d");
+	ctx.drawImage(cameraView, 0,0, cameraOutput.width, cameraOutput.height);
+	Filters.filterImage(Filters.paletteSwap, cameraOutput, [palettes[currentPalette]])
+	var dataURL = cameraOutput.toDataURL('image/png');
+	document.getElementById("output").src = dataURL;
 }
 
 function initCameraUI() {
