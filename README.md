@@ -1,4 +1,6 @@
-# webgbcam
+I just forked this to play around with settings a bit and make saving images easier on my phone. If you want to mess around yourself, go and fork from Maple. Also if you're seeing this Maple, thanks for the really cool tool to play with.
+
+## webgbcam
 
 A simple Game Boy Camera-style filter made in HTML5 and JavaScript
 
