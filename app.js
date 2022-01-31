@@ -230,7 +230,7 @@ var gifRecording,
 // global settings for gbcamera
 var renderWidth = 160,
 		renderHeight = 144,
-		currentPalette = 0,
+		currentPalette = 2,
 		currentUI = uiMain;
 
 var cameraVars = {
