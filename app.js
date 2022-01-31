@@ -340,7 +340,7 @@ function savePicture() {
 	ctx.drawImage(cameraView, 0,0, cameraOutput.width, cameraOutput.height);
 	Filters.filterImage(Filters.paletteSwap, cameraOutput, [palettes[currentPalette]])
 	var dataURL = cameraOutput.toDataURL('image/png');
-	download("webgbcam " + getFileDate() + ".png", dataURL);
+	document.getElementById("output").src = dataURL;
 }
 
 // bounding boxes for each button in the app
