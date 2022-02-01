@@ -14,7 +14,7 @@
 <body>
 
 	<div class="maple-window">
-		<div class="maple-window-title"><span>webgbcam v3.2</span></div>
+		<div class="maple-window-title"><span>webgbcam v3.2-Z</span></div>
 		<div id="camera">
 			<canvas id="app-view"></canvas>
 			<canvas id="camera-view"></canvas>
@@ -24,15 +24,35 @@
 	</div>
 
 	<div class="maple-window centered">
+		<input type="image" onclick="setColor(0)" src="icons/0.png" />
+		<input type="image" onclick="setColor(1)" src="icons/1.png" />
+		<input type="image" onclick="setColor(2)" src="icons/2.png" />
+		<input type="image" onclick="setColor(3)" src="icons/3.png" />
+		<input type="image" onclick="setColor(4)" src="icons/4.png" />
+		<input type="image" onclick="setColor(5)" src="icons/5.png" />
+		<input type="image" onclick="setColor(6)" src="icons/6.png" />
+		<input type="image" onclick="setColor(7)" src="icons/7.png" />
+		<input type="image" onclick="setColor(8)" src="icons/8.png" />
+		<input type="image" onclick="setColor(9)" src="icons/9.png" />
+		<input type="image" onclick="setColor(10)" src="icons/10.png" />
+		<input type="image" onclick="setColor(11)" src="icons/11.png" />
+	</div>
+
+	<div class="maple-window centered">
 		<p>made by <a href="https://twitter.com/maplesbian">@maplesbian</a> - inspired by christine love's interstellar selfie station</p>
 
 		<p>webgbcam uses <a href="https://github.com/jnordberg/gif.js">gif.js</a><br/>
 		you can check the source code on <a href="https://github.com/Lana-chan/webgbcam">github</a>!</p>
-
-		<p>if you like the stuff <a href="https://twitter.com/maplesbian">@maplesbian</a> does, check out <a href="https://maple.pet/">their website</a> or <a href="https://ko-fi.com/squirrel">donate to them on ko-fi</a>!</p>
 			
-		<img id="output" src=""></img>
 	</div>
+
+	<div class="maple-window centered" id="output-div"><img id="output" src=""></img></div>
+
+	<script>
+		function setColor(n){
+			currentPalette = n;
+		}
+	</script>
 
 	<div id="gif-preview" class="maple-window modal hidden">
 		<div class="maple-window-title"><span>gif preview</span></div>

@@ -3,6 +3,7 @@ html, body{
   padding: 0;
   height: 100%;
   width: 100%;
+  touch-action: manipulation;
 }
 
 body {
@@ -80,8 +81,11 @@ body {
 	display: none;
 }
 
+#output-div{
+	display:none;
+}
+
 #output{
-	width:160px;
 	overflow: none;
 }
 

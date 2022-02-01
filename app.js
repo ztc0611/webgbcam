@@ -589,6 +589,8 @@ function captureImage() {
 	cameraStream.pause();
 	currentUI = uiCapture;
 	
+	document.getElementById("output-div").style.display = "block";
+
 	let ctx = cameraOutput.getContext("2d");
 	ctx.drawImage(cameraView, 0,0, cameraOutput.width, cameraOutput.height);
 	Filters.filterImage(Filters.paletteSwap, cameraOutput, [palettes[currentPalette]])
